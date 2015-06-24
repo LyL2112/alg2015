@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Capitulo 2 ->2</title>
+        		<style type="text/css">
+
+			* {
+				margin:0px;
+				padding:0px;
+			}
+
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+
+			ul, ol {
+				list-style:none;
+			}
+
+			.nav > li {
+				float:left;
+			}
+
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+
+			.nav li a:hover {
+				background-color:#434343;
+			}
+
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+
+			.nav li:hover > ul {
+				display:block;
+			}
+
+			.nav li ul li {
+				position:relative;
+			}
+
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+
+		</style>
+</head>
+<body>
+
+<section><div id="header">
+			<ul class="nav">
+				<li><a href="../../index.html">Inicio</a></li>
+				<li><a href="">Capitulo 1</a>
+					<ul>
+						<li><a href="../../Cap_1/1/Capitulo_1.1.html">Leccion 1.1</a></li>
+						<li><a href="../../Cap_1/2/Capitulo_1.2.html">Leccion 1.2</a></li>
+						<li><a href="../../Cap_1/3/Capitulo_1.3.html">Leccion 1.3</a></li>
+						<li><a href="../../Cap_1/4/Capitulo_1.4.html">Leccion 1.4</a></li>
+                        <li><a href="../../Cap_1/ProblemSet/ProblemSet1.html">Problem Set 1</a></li>
+					</ul>
+				</li>
+                <li><a href="">Capitulo 2</a>
+					<ul>
+						<li><a href="../1/Capitulo_2.1.html">Leccion 2.1</a></li>
+						<li><a href="Capitulo_2.2.html">Leccion 2.2</a>
+							<ul>
+                                <li><a href="#quiz-1">quiz 1</a></li>
+                                <li><a href="#quiz-2">quiz 2</a></li>
+                                <li><a href="#quiz-3">quiz 3</a></li>
+                                <li><a href="#quiz-4">quiz 4</a></li>
+                                <li><a href="#quiz-5">quiz 5</a></li>
+                                <li><a href="#quiz-6">quiz 6</a></li>
+                                <li><a href="#quiz-7">quiz 7</a></li>
+                                <li><a href="#quiz-8">quiz 8</a></li>
+
+                            </ul>
+						</li>
+						<li><a href="../3/Capitulo_2.3.html">Leccion 2.3</a></li>
+						<li><a href="../4/Capitulo_2.4.html">Leccion 2.4</a></li>
+                        <li><a href="../5/Capitulo_2.5.html">Leccion 2.5</a></li>
+                        <li><a href="../ProblemSet2/ProblemSet2.html">Problem Set 2</a></li>
+					</ul>
+				</li>
+				<li><a href="../../Applet/RandQS%20Time%20Plot.html">Applet</a></li>
+				<li><a href="../../otros/otros.html">Otros</a></li>
+			</ul>
+		</div></section>
+<br>
+<br>
+<br>
+<section id="part1of1">
+	<div id="cont" ALIGN=center >
+
+		<h2> Reconocer-Comprender-Navegar</h2>
+		<hr>
+		<hr>
+		<br>
+
+
+		<section id="quiz-1">
+			<h2> Quiz 1 - Cuales Caracteristica?</h2>
+			<h5>
+				<b>Cuales Caracteristica son comunes en los tres problemas?<br>
+				</b>
+
+			</h5>
+			 <IMG SRC="../../img/cap2/2/quiz1.png" WIDTH=350 HEIGHT=250 >
+			<h4>
+				Computabilidad -> Puede un programa decidir si otro programa  es malware <br>
+				Teaoria de Complejidad->Como de rapido un  computador puede encontrar un camino entre dos puntos en un mapa.
+			</h4>
+
+		</section>
+		<section id="quiz-2">
+			<h2> Quiz 2 - Funcion if-better</h2>
+
+			<h5>
+				Determinar  la complidad de <a href="quiz2.py">este algoritmos</a>, si es polinomial o Exponencal<br>
+							 <IMG SRC="../../img/cap2/2/quiz2.png" WIDTH=350 HEIGHT=250 >
+
+			</h5>
+		</section>
+		<section id="quiz-3">
+			<h2> Quiz 3 - Clases de Complidad</h2>
+			<h5>
+				La idea es identificar  las clases  de complejidad donde toso los problemas pueden ser reueltos
+				<br>
+					<         <IMG SRC="../../img/cap2/2/quiz3.png" WIDTH=350 HEIGHT=250 >
+
+			</h5>
+
+		</section>
+		<section id="quiz-4">
+			<h2> Quiz 4 -RAM Estandar y If_Better </h2>
+			<h5>
+				RAM estandar, hace enfasis en un equipo normal, qu podemos hacer seguimiento paso a paso<br>
+				Y  se puede denterminar que va suceder
+				Pero en una RAM qu ejecuta la funcion If_Better, hace enfasis en un equipo robusto,<br>
+				que   podemos hacer seguimiento paso a paso, pero cuando nos encontramos con la funcion If Better<br>
+				No se puede saber que va suceder.
+				<br><br>
+				En conclucion en ciencias de la computacion se le llama Determinismo y No-Determinismo
+				<br>
+				Ahora veremos si un algoritmo No determinista con un entrada,y al ejecutarlo varia veces<br>
+				no se puede obtenr la misma salida.
+				<br><br>
+				<IMG SRC="../../img/cap2/2/quiz4.png" WIDTH=350 HEIGHT=250 >
+			</h5>
+		</section>
+
+		<section id="quiz-5">
+			<h2> Quiz 5 -Construir o Simular No-Determinismo</h2>
+
+			<h5>
+			La idea es secilla, primero se propone cotruir una RAM para No-determinismo<br>
+				Pero resulta bastante dificil asi  que se opta por Simularla<br>
+				Entonces, que propiedades debe tener una simulacion de un No-Determinismo
+			</h5>
+
+					<IMG SRC="../../img/cap2/2/quiz5.png" WIDTH=350 HEIGHT=250 >
+
+
+		</section>
+		<section id="quiz-6">
+			<h2> Quiz 6 -Simular No-Determinismo</h2>
+
+			<h5>
+				Bien ahora analizamos el la cantidad de simulaciones para un codigo de programa<br>
+				que contiene la funcion If_Better
+			</h5>
+
+					<IMG SRC="../../img/cap2/2/quiz6.png" WIDTH=350 HEIGHT=250 >
+			<h4>
+				RTA: 2^n Por que cada vez estamos partiendo el en dos  posibilidades de Simulacion.<br<br>
+				Y cada una tiene un comportamiento Exponencial.
+			</h4>
+
+
+		</section>
+		<section id="quiz-7">
+			<h2> Quiz 7 -  Tiempo polinomial </h2>
+
+			<h5>
+				Un dato ma cercano a la definicion de P y NP<br>
+				P-> Cualdo tenemos un problema solucionable en una memoria RAM Determinista<br>
+				NP-> Cualdo tenemos un problema solucionable en una memoria RAM No-Determinista<br>
+
+			</h5>
+
+					<IMG SRC="../../img/cap2/2/quiz7.png" WIDTH=350 HEIGHT=250 >
+			<h4>
+
+			</h4>
+
+
+		</section>
+		<section id="quiz-8">
+			<h2> Quiz 8 -En P o NP</h2>
+
+			<h5>
+				Como tenemos la Primisia de que el Problema de Vertex Cover esta en P, entonces<br>
+				los otros tres problemas, comoo se mensioan desde un principio tiene relacion entonces  se da como rta la sig.
+
+			</h5>
+
+					<IMG SRC="../../img/cap2/2/quiz8.png" WIDTH=350 HEIGHT=250 >
+
+
+		</section>
+	</div>
+</section>
+
+<section id="part1of2">
+
+    
+</section>
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Capitulo 2 ->5</title>
+        		<style type="text/css">
+
+			* {
+				margin:0px;
+				padding:0px;
+			}
+
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+
+			ul, ol {
+				list-style:none;
+			}
+
+			.nav > li {
+				float:left;
+			}
+
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+
+			.nav li a:hover {
+				background-color:#434343;
+			}
+
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+
+			.nav li:hover > ul {
+				display:block;
+			}
+
+			.nav li ul li {
+				position:relative;
+			}
+
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+
+		</style>
+</head>
+<body >
+<section>
+	<div id="header" >
+			<ul class="nav">
+				<li><a href="../../index.html">Inicio</a></li>
+				<li><a href="">Capitulo 1</a>
+					<ul>
+						<li><a href="../../Cap_1/1/Capitulo_1.1.html">Leccion 1.1</a></li>
+						<li><a href="../../Cap_1/2/Capitulo_1.2.html">Leccion 1.2</a></li>
+						<li><a href="../../Cap_1/3/Capitulo_1.3.html">Leccion 1.3</a></li>
+						<li><a href="../../Cap_1/4/Capitulo_1.4.html">Leccion 1.4</a></li>
+                        <li><a href="../../Cap_1/ProblemSet/ProblemSet1.html">Problem Set 1</a></li>
+					</ul>
+				</li>
+                <li><a href="">Capitulo 2</a>
+					<ul>
+						<li><a href="../1/Capitulo_2.1.html">Leccion 2.1</a></li>
+						<li><a href="../2/Capitulo_2.2.html">Leccion 2.2</a></li>
+						<li><a href="../3/Capitulo_2.3.html">Leccion 2.3</a></li>
+						<li><a href="../4/Capitulo_2.4.html">Leccion 2.4</a></li>
+                        <li><a href="Capitulo_2.5.html">Leccion 2.5</a>
+							<ul>
+                                <li><a href="#quiz-1">quiz 1</a></li>
+                                <li><a href="#quiz-2">quiz 2</a></li>
+                                <li><a href="#quiz-3">quiz 3</a></li>
+                                <li><a href="#quiz-4">quiz 4</a></li>
+                                <li><a href="#quiz-5">quiz 5</a></li>
+                                <li><a href="#quiz-6">quiz 6</a></li>
+                                <li><a href="#quiz-7">quiz 7</a></li>
+
+                            </ul>
+						</li>
+                        <li><a href="../ProblemSet2/ProblemSet2.html">Problem Set 2</a></li>
+					</ul>
+				</li>
+				<li><a href="../../Applet/RandQS%20Time%20Plot.html">Applet</a></li>
+				<li><a href="../../otros/otros.html">Otros</a></li>
+			</ul>
+		</div>
+
+</section>
+<br>
+<br>
+<br>
+<section id="part1of1" >
+
+	<div id="cont" ALIGN=center >
+		<h2> NP- Completo Vs Reducciones</h2>
+		<hr>
+		<hr>
+		<br>
+		<h3>
+
+			Algunos Problemas de NP-Completos pueder ser Reducidos en tiempo Polinomial a SAT <br>
+			Por medio de Tres Ideas.
+			<br> Primero: Algunos problemas NP  pueden ser resueltos en Tiempo polinomial<br>
+			por una RAM NO-Determinista
+			<br>Segunda:Debe haber un algoritmo de tiempo polinomial usando -> If_Better <br>
+			Tercera IDEA: Ver que algunos algoritmos pueden ser codificados como na formula Booleana.
+			<br>
+			<br>
+			Teorema de Cook-Levis
+
+		</h3>
+
+		<section id="quiz-1">
+
+			<h2> Quiz 1 -Examinando Solucion de Problema </h2>
+			<h5>
+
+				<br>
+
+			</h5>
+			<IMG SRC="../../img/cap2/5/quiz1.png" WIDTH=350 HEIGHT=250 >
+
+			<h4>
+
+			</h4>
+		</section>
+		<section id="quiz-2">
+			<h2> Quiz 2 -Solo Tiempo exponencial </h2>
+			<h5>
+				Que sucede si un problema NP-Completo solo es solucionable en tiempo Exponencial?<br>
+				Que puede inferirse a partir de dicha premisa.
+			</h5>
+			<IMG SRC="../../img/cap2/5/quiz2.png" WIDTH=350 HEIGHT=250 >
+			<h4>
+			</h4>
+		</section>
+
+		<section id="quiz-3">
+			<h2> Quiz 3 - Covertir de SAT -> CLIQUE </h2>
+			<h5>
+				Para lograr tal transformacion se hace necesario el uso de Clausulas que son agrupamientos de la Formula Boolena,<br>
+				estas represnta un conjunto de vertices.
+				<br>
+				Partiendo de este conocimeinto, sse procede a pintar las Aristas entre los vertices. <br>
+				FIbalmense se observa el grafo obteniedo un CLIQUE<br>
+
+				<br>
+
+
+			</h5>
+			<IMG SRC="../../img/cap2/5/quiz3.png" WIDTH=350 HEIGHT=250 >
+
+			<h4>
+
+			</h4>
+
+		</section>
+		<section id="quiz-4">
+			<h2> Quiz 4 -Usado CLIQUE - SET </h2>
+			<h5>
+				Realizando la conversion de una Formula Boolena bien formada a CLIQUE,  .<br>
+				Donde se obtuvo que es  tambien NP Completo, por lo tanto esto es una mala noticia para Bob.<br>
+				Recuerde que los problemas de Bob, Alice y Carol  estan estrechamente relacionados. <br>
+				<br>
+
+			</h5>
+			<IMG SRC="../../img/cap2/5/quiz4.png" WIDTH=350 HEIGHT=250 >
+
+			<h4>
+
+			</h4>
+		</section>
+
+		<section id="quiz-5">
+			<h2> Quiz 5 - P Vs NP</h2>
+
+			<h5>
+				Al idea es mostarat¿r que tan probable es que se cumpla una de las siguientes Afirmaciones:
+				<br>
+				P=NP
+				<br>
+				P!=NP
+				<br>
+				Finalmaende se plantea un par de situaciones y verificar a que tipo de Suposicion inicial se cumple  o no se sabe.
+
+			</h5>
+			<IMG SRC="../../img/cap2/5/quiz5.png" WIDTH=350 HEIGHT=250 >
+
+			<h4>
+
+			</h4>
+		</section>
+			<section id="quiz-6">
+			<h2> Quiz 6 - Multitud de Problemas</h2>
+
+			<h5>
+				Desde el punto de vista de las Ciencias de la Compuatcion se puede decir que <br>
+				Problema P no es equivalnte a NP<br>
+				<br>
+				La conclucion  que  puedo hacer como lograr demostrar este tipo de insertidumbres, como lo es<br>
+				P=NP que estema de estudio de muchos cientificos de la Teoria de la Computacion<br>
+				Para Ampliar esta informacion podemos dirigirnos a la siguiente Pagina. <br>
+					<h3><a href="http://www.win.tue.nl/~gwoegi/P-versus-NP.htm" target="_blank">The P-versus-NP page </a></h3>
+				<br>
+
+			</h5>
+			<IMG SRC="../../img/cap2/5/quiz6.png" WIDTH=350 HEIGHT=250 >
+			<h4>
+			</h4>
+		</section>
+		<section id="final">
+			<h2> CONCLUCION</h2>
+			<h5>
+				Los problemas de Alice,Bob y Carol en conclucion son NP-Completos<br>
+
+			</h5>
+			<IMG SRC="../../img/cap2/5/quiz7.png" WIDTH=350 HEIGHT=250 >
+			<h4>
+			</h4>
+		</section>
+	</div>
+</section>
+
+<section id="part1of2">
+
+    
+</section>
+
+</body>
+</html>

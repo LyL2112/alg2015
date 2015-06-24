@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Capitulo 1->2</title>
+        		<style type="text/css">
+
+			* {
+				margin:0px;
+				padding:0px;
+			}
+
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+
+			ul, ol {
+				list-style:none;
+			}
+
+			.nav > li {
+				float:left;
+			}
+
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+
+			.nav li a:hover {
+				background-color:#434343;
+			}
+
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+
+			.nav li:hover > ul {
+				display:block;
+			}
+
+			.nav li ul li {
+				position:relative;
+			}
+
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+
+		</style>
+</head>
+<body>
+<section><div id="header">
+			<ul class="nav">
+				<li><a href="../../index.html">Inicio</a></li>
+				<li><a href="">Capitulo 1</a>
+					<ul>
+						<li><a href="../1/Capitulo_1.1.html">Leccion 1.1</a></li>
+						<li><a href="Capitulo_1.2.html">Leccion 1.2</a>
+                            <ul>
+                                <li><a href="#quiz-1">quiz 1</a></li>
+                                <li><a href="#quiz-2">quiz 2</a></li>
+                                <li><a href="#quiz-3">quiz 3</a></li>
+                                <li><a href="#quiz-4">quiz 4</a></li>
+                                <li><a href="#quiz-5">quiz 5</a></li>
+                                <li><a href="#quiz-6">quiz 6</a></li>
+                                <li><a href="#quiz-7">quiz 7</a></li>
+                                <li><a href="#quiz-8">quiz 8</a></li>
+                            </ul>
+                        </li>
+
+						<li><a href="../3/Capitulo_1.3.html">Leccion 1.3</a></li>
+						<li><a href="../4/Capitulo_1.4.html">Leccion 1.4</a></li>
+                        <li><a href="../ProblemSet/ProblemSet1.html">Problem Set 1</a></li>
+					</ul>
+				</li>
+                <li><a href="">Capitulo 2</a>
+					<ul>
+						<li><a href="../../Cap_2/1/Capitulo_2.1.html">Leccion 2.1</a></li>
+						<li><a href="../../Cap_2/2/Capitulo_2.2.html">Leccion 2.2</a></li>
+						<li><a href="../../Cap_2/3/Capitulo_2.3.html">Leccion 2.3</a></li>
+						<li><a href="../../Cap_2/4/Capitulo_2.4.html">Leccion 2.4</a></li>
+                        <li><a href="../../Cap_2/5/Capitulo_2.5.html">Leccion 2.5</a></li>
+                        <li><a href="../../Cap_2/ProblemSet2/ProblemSet2.html">Problem Set 2</a></li>
+					</ul>
+				</li>
+				<li><a href="../../Applet/RandQS%20Time%20Plot.html">Applet</a></li>
+				<li><a href="../../otros/otros.html">Otros</a></li>
+			</ul>
+		</div></section>
+<br>
+<br>
+<br>
+<section id=part1of2">
+	<div id="cont" ALIGN=center >
+
+        <h1> Analisis de Algortmos y de RAM</h1>
+        <hr>
+		<hr>
+		<br>
+        <h3>
+            Notaciones de Big O -> <br>
+            RAM-> <br>
+            Peor caso  -> <br>
+
+        </h3>
+
+        <section id="quiz-1">
+
+                <h2> Quiz 1 - El tiempo de ejecucion de un algoritmos puede verificarse con</h2>
+                <IMG SRC="../../img/cap1/2/Quiz1.png" WIDTH=350 HEIGHT=250 >
+
+        </section>
+
+        <section id="quiz-2">
+            <h2> Quiz 2 -RAM </h2>
+
+            <h5>
+
+                Cuales son los componentes escenciales para tener un modelo informatico,<br> lo mas simple posible para ejecutar un algoritmo.
+                <br>
+
+                <IMG SRC="../../img/cap1/2/quiz2.png" WIDTH=350 HEIGHT=250 >
+
+            </h5>
+        </section>
+
+            <section id="item-1">
+            <h2> RAM</h2>
+                <h4> Como los componentes escenciales de un modelo informatico fueron la Memoria, Input/output y Programacion<br>
+                Ahora los componentes escenciales de el modelo RAM son:</h4>
+            <h3>
+                Ramdom <br>
+                Access<br>
+                Machine<br>
+            </h3>
+
+
+
+        </section>
+
+        <section id="quiz-3">
+            <h2> Quiz 3 - Numero de pasos</h2>
+            <h5>
+                Numero de pasos  necesarios para ejecutar un programa como el sig.<br>
+                Teniendo en cuanta los tres Reglas.<br>
+            </h5>
+                <IMG SRC="../../img/cap1/2/quiz3.png" WIDTH=350 HEIGHT=250 >
+            <h4>
+                Rta: Es de tiempo constante, se cumple la primera regla "Simple"
+            </h4>
+        </section>
+        <section id="quiz-4">
+            <h2> Quiz 4 - Numero de pasos 2</h2>
+            <h5>
+                Numero de pasos  necesarios para ejecutar un programa como el sig.<br>
+                Teniendo en cuanta los tres Reglas.<br>
+            </h5>
+                <IMG SRC="../../img/cap1/2/quiz4.png" WIDTH=350 HEIGHT=250 >
+            <h4>
+                Rta: Los pasos que se ejecutan, debe tener encuanta las comprobaciones de condicion de ciclo<br>
+                se va a realizar una vez  mas que lo que hay en el cuerpo del ciclo.<br>
+                Nota: Cumpliendose las tres Reglas
+            </h4>
+        </section>
+
+        <section id="quiz-5">
+                <h2> Quiz 5 - El uso de RAM</h2>
+            <h5>
+                Analizar de una manera general las diferentes caracterizticas que se cumplan para caada uno de los dos<br>
+                casos que se exponen de acuerdo con el manejo de entradas a un determinado programa
+                Teniendo en cuanta los tres Reglas.<br>
+            </h5>
+                <IMG SRC="../../img/cap1/2/quiz5.png" WIDTH=350 HEIGHT=250 >
+        </section>
+
+        <section id="quiz-6">
+                <h2> Quiz 6 -Teimpo de ejecucion Vs Estructuras</h2>
+            <h5>
+                Ahora debemos analizar el tiempo deejecucion de un aloritmos tan simple como <a href="quiz6.py"> este.</a><br>
+                Finalmente resolvieendo la formula que me de el tiempo de ejecucion como esta en la figura sig.
+                Teniendo en cuanta los tres Reglas.<br>
+            </h5>
+                <IMG SRC="../../img/cap1/2/quiz6.png" WIDTH=350 HEIGHT=250 >
+            <h4>
+                La RTA: viene dada de la siguiente forma: runningtime=2*n+1*a+(0|1)
+            </h4>
+        </section>
+        <section id="quiz-7">
+                <h2> Quiz 7 -Analisis de el Mejor y el Peor Caso</h2>
+            <h5>
+                Debemos encontrar los coeficientes que me describen el Mejor y Poer caso.<br>
+                Primero cuando tenemos una entrada de tamaño n, y ademas esta no contiene ninguna a, entonces este es el<br>
+                MEJOR CASO ->  runningtime=2*n +0*a+1
+                <br>
+                Cuando tenemos una entrada de tamaño n, y tenemos la cantidad de caracter (a) igual a N, entonces este es el<br>
+                PEOR CASO ->  runningtime=3*n +0*a+1
+            </h5>
+                <IMG SRC="../../img/cap1/2/quiz7.png" WIDTH=350 HEIGHT=250 >
+            <h4>
+
+            </h4>
+        </section>
+        <section id="quiz-8">
+                <h2> Quiz 8 -Clasificacion del tipo de Entrada</h2>
+            <h5>
+                No resulta de ningun interes hablar del MEJOR CASO debido que resulta bastante trivial.<br>
+                <br>
+                CASO PROMEDIO es bastante difil de determinar debido a que no se puede tener garantias del tipo de entradas que vamos a tener en el programa
+                <br>
+                Pero  si analizamos el PEOR CASO tendremos la seguridad que pase lo que pase, se va tener este maximo de tiempo de ejecucion.<br>
+                Ahora Analizaremos  apartir de <a href="quiz8.py">este algoritmo</a> , cual de las siguientes entradas pertence a uno de los tres tipos de entradas.<br>
+            </h5>
+                <IMG SRC="../../img/cap1/2/quiz8.png" WIDTH=350 HEIGHT=250 >
+            <h4>
+
+            </h4>
+        </section>
+    </div>
+</section>
+
+
+</body>
+</html>

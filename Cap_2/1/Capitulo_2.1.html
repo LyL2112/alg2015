@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Capitulo 2 ->1</title>
+        		<style type="text/css">
+
+			* {
+				margin:0px;
+				padding:0px;
+			}
+
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+
+			ul, ol {
+				list-style:none;
+			}
+
+			.nav > li {
+				float:left;
+			}
+
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+
+			.nav li a:hover {
+				background-color:#434343;
+			}
+
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+
+			.nav li:hover > ul {
+				display:block;
+			}
+
+			.nav li ul li {
+				position:relative;
+			}
+
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+
+		</style>
+</head>
+<body>
+<section><div id="header">
+			<ul class="nav">
+				<li><a href="../../index.html">Inicio</a></li>
+				<li><a href="">Capitulo 1</a>
+					<ul>
+						<li><a href="../../Cap_1/1/Capitulo_1.1.html">Leccion 1.1</a></li>
+						<li><a href="../../Cap_1/2/Capitulo_1.2.html">Leccion 1.2</a></li>
+						<li><a href="../../Cap_1/3/Capitulo_1.3.html">Leccion 1.3</a></li>
+						<li><a href="../../Cap_1/4/Capitulo_1.4.html">Leccion 1.4</a></li>
+                        <li><a href="../../Cap_1/ProblemSet/ProblemSet1.html">Problem Set 1</a></li>
+					</ul>
+				</li>
+                <li><a href="">Capitulo 2</a>
+					<ul>
+						<li><a href="Capitulo_2.1.html">Leccion 2.1</a>
+							<ul>
+                                <li><a href="#quiz-1">quiz 1</a></li>
+                                <li><a href="#quiz-2">quiz 2</a></li>
+                                <li><a href="#quiz-3">quiz 3</a></li>
+                                <li><a href="#quiz-4">quiz 4</a></li>
+                                <li><a href="#quiz-5">quiz 5</a></li>
+                                <li><a href="#quiz-6">quiz 6</a></li>
+                                <li><a href="#quiz-7">quiz 7</a></li>
+                            </ul>
+						</li>
+						<li><a href="../2/Capitulo_2.2.html">Leccion 2.2</a></li>
+						<li><a href="../3/Capitulo_2.3.html">Leccion 2.3</a></li>
+						<li><a href="../4/Capitulo_2.4.html">Leccion 2.4</a></li>
+                        <li><a href="../5/Capitulo_2.5.html">Leccion 2.5</a></li>
+                        <li><a href="../ProblemSet2/ProblemSet2.html">Problem Set 2</a></li>
+					</ul>
+				</li>
+				<li><a href="../../Applet/RandQS%20Time%20Plot.html">Applet</a></li>
+				<li><a href="../../otros/otros.html">Otros</a></li>
+			</ul>
+		</div></section>
+<br>
+<br>
+<br>
+<section id="part1of1">
+	<div id="cont" ALIGN=center >
+
+		<h2> Muchas Soluciones y intratabilidad</h2>
+		<hr>
+		<hr>
+		<br>
+		<h3>
+			La idea es plasmar cuatro cosas en esta Unidad<br>
+			-> Que significa P vs NP  <br>
+			-> Cual es el Problema en realidad<br>
+			-> Alice, Bob, Carol tienen alguna relacion con P vs NP<br>
+			-> Forma de Conertirse en un millonario Instataneo <br>
+
+
+			<IMG SRC="../../img/cap2/1/intro.png" WIDTH=350 HEIGHT=250 >
+		</h3>
+
+		<section id="quiz-1">
+
+				<h2> Quiz 1 - Recordando A los Tres Cientificos</h2>
+			<h3>
+				<b>Alice -> Vertex Cover <br>
+					Bob  -> Clique<br>
+					Carol-> Independent Set<br>
+
+				</b>
+				 <IMG SRC="../../img/cap2/1/quiz1.png" WIDTH=350 HEIGHT=250 >
+			</h3>
+
+		</section>
+		<section id="quiz-2">
+			<h2> Quiz 2 - Optimizacion-Descicion</h2>
+
+			<h5>
+				La Gran diferencia entre los problemas de Optimizacion y los de Desicion es: <br>
+				Los Problemas de Optimizacion, nos preguntamos, buscamos la MEJOR SOLUCION,<br>
+				Y la respuesta puede ser un numero.<br>
+				Pero Los problemas de Desicion nos  preguntamos es Posible encontara un valor de K,<br>
+				Y la respuesta puede ser SI o NO.
+
+				<br>
+							 <IMG SRC="../../img/cap2/1/quiz2.png" WIDTH=350 HEIGHT=250 >
+
+			</h5>
+		</section>
+		<section id="quiz-3">
+			<h2> Quiz 3 -Demostrar lo Intratabla </h2>
+			<h5>
+				Para demostara solo es necesario encontar un algoritmo de tiempo polinomial.<br>
+				Hay dos Formas de demostaralo:<br>
+				Primero: Recopilacion de Pruebas. Si recordamos algoritmos de Alice, Bob,Carol.<br>
+				Estos tres comparte una solucion de algoritmos intratables, pero si alguno de<br>
+				ellos encuentra la solucion de lo  exponecial a lo polinomial se puede decir <br>
+				que los demas problemas son tratables.
+				<br>
+				<br>
+				Segundo: Realizando Pruebas matematicas
+				<br>
+				Ahora la idea es ver  cual de estos dos enfoques es mas conveniete.
+				<br>
+							 <IMG SRC="../../img/cap2/1/quiz3.png" WIDTH=350 HEIGHT=250 >
+			</h5>
+
+		</section>
+		<section id="quiz-4">
+			<h2> Quiz 4 -Algunos Solucionables Vs Intratables </h2>
+			<h5>
+				No siempre significa que el numero de soluciones tenga relacion con <br>
+				ver si es tratable o no.
+				<br>
+							 <IMG SRC="../../img/cap2/1/quiz4.png" WIDTH=350 HEIGHT=250 >
+
+			</h5>
+		</section>
+
+		<section id="quiz-5">
+			<h2> Quiz 5 - Algunos Solucionables Vs Intratables 2</h2>
+			<h5>
+				No siempre significa que el numero de soluciones tenga relacion con <br>
+				ver si es tratable o no.
+				<br>
+							 <IMG SRC="../../img/cap2/1/quiz5.png" WIDTH=350 HEIGHT=250 >
+
+			</h5>
+		</section>
+		<section id="quiz-6">
+			<h2> Quiz 6 - Algunos Solucionables Vs Intratables 2</h2>
+			<h5>
+				No siempre significa que el numero de soluciones tenga relacion con <br>
+				ver si es tratable o no.
+				<br>
+							 <IMG SRC="../../img/cap2/1/quiz6.png" WIDTH=350 HEIGHT=250 >
+
+			</h5>
+		</section>
+		<section id="quiz-7">
+			<h2> Quiz 7 - Algunos Solucionables Vs Intratables 2</h2>
+			<h5>
+				Para calcular  el numero e caminos diferentes para ir de un punto A al B <br>
+				se determina una formula General
+				<br>
+							 <IMG SRC="../../img/cap2/1/quiz7.png" WIDTH=350 HEIGHT=250 >
+
+			</h5>
+			<h4>
+				RTA: 2^(n/2)-1
+			</h4>
+		</section>
+	</div>
+</section>
+
+<section id="part1of2">
+
+    
+</section>
+
+</body>
+</html>
